@@ -19,9 +19,10 @@ public class RobotBase
             
             //Direction.NORTH, EAST, SOUTH, WEST
             //Definicion de la ubicacion del robot, Ciudad, posicion, Direccion, Numero things en el bolso.
-            estudiante = new Robot(objetos,0, 2, Direction.WEST,10);
+            estudiante = new Robot(objetos,1, 2,Direction.SOUTH,10);
             
 	    //Girar a la izquierda
+            estudiante.turnLeft();
             estudiante.turnLeft();
             estudiante.turnLeft();
         
@@ -30,22 +31,32 @@ public class RobotBase
                      
             //Girar a la izquierda
             estudiante.turnLeft();
-            estudiante.turnLeft();
+         
+            //Mover una interseccion en el sentido al cual este apuntando el objeto.
+            estudiante.move ();
+              
+            //Girar a la izquierda
             estudiante.turnLeft();
             
             //Mover una interseccion en el sentido al cual este apuntando el objeto.
             estudiante.move ();
-            estudiante.move ();
-            estudiante.move ();
+            
+                          
+              estudiante.pickThing();
             
             //Girar a la izquierda
             estudiante.turnLeft();
             estudiante.turnLeft();
-            estudiante.turnLeft();
-            
+                          
             //Mover una interseccion en el sentido al cual este apuntando el objeto.
             estudiante.move ();
-            estudiante.move ();
+                     
+            //Girar a la izquierda
+            estudiante.turnLeft();
+            estudiante.turnLeft();
+            estudiante.turnLeft();
+                       
+            //Mover una interseccion en el sentido al cual este apuntando el objeto.
             estudiante.move ();
             
             //Girar a la izquierda
@@ -55,24 +66,8 @@ public class RobotBase
                        
             //Mover una interseccion en el sentido al cual este apuntando el objeto.
             estudiante.move ();
-            estudiante.move ();
-            estudiante.move ();
-            
-            //Girar a la izquierda
-            estudiante.turnLeft();
-            estudiante.turnLeft();
-            estudiante.turnLeft();
-                       
-            //Mover una interseccion en el sentido al cual este apuntando el objeto.
-            estudiante.move ();
-            estudiante.move ();
-            
-             //Girar a la izquierda
-            estudiante.turnLeft();
-            estudiante.turnLeft();            
-            
-           
-	}
+                   
+       	}
         
         public static void creacionFuncion(int parametroEntrada){
             for (int i = 0; i < parametroEntrada; i++) 
