@@ -19,37 +19,59 @@ public class RobotBase
             
             //Direction.NORTH, EAST, SOUTH, WEST
             //Definicion de la ubicacion del robot, Ciudad, posicion, Direccion, Numero things en el bolso.
-            estudiante = new Robot(objetos,0, 2, Direction.EAST,10);
+            estudiante = new Robot(objetos,0, 2, Direction.WEST,10);
             
-	    //Mover una interseccion en el sentido al cual este apuntando el objeto.
+	    //Girar a la izquierda
+            estudiante.turnLeft();
+            estudiante.turnLeft();
+        
+            //Mover una interseccion en el sentido al cual este apuntando el objeto.
+            estudiante.move ();
+                     
+            //Girar a la izquierda
+            estudiante.turnLeft();
+            estudiante.turnLeft();
+            estudiante.turnLeft();
+            
+            //Mover una interseccion en el sentido al cual este apuntando el objeto.
+            estudiante.move ();
+            estudiante.move ();
             estudiante.move ();
             
             //Girar a la izquierda
             estudiante.turnLeft();
+            estudiante.turnLeft();
+            estudiante.turnLeft();
             
-            //Tomando decisiones, Si puedo tomar un Thing
-            boolean puedeTomar = estudiante.canPickThing();
+            //Mover una interseccion en el sentido al cual este apuntando el objeto.
+            estudiante.move ();
+            estudiante.move ();
+            estudiante.move ();
             
-            //Tomar un Thing
-            if(puedeTomar == true)
-               estudiante.pickThing();
-            
-            //Especifica el numero de Thing que tiene en robot en el bolso
-            int numeroThings = estudiante.countThingsInBackpack();
-            
-            //Poner Thing, se debe validar que tenga things en el bolso
-            estudiante.putThing();
+            //Girar a la izquierda
+            estudiante.turnLeft();
+            estudiante.turnLeft();
+            estudiante.turnLeft();
                        
-            //Si el frente esta libre de Wall
-            estudiante.frontIsClear();
+            //Mover una interseccion en el sentido al cual este apuntando el objeto.
+            estudiante.move ();
+            estudiante.move ();
+            estudiante.move ();
             
-            //Invocando una funcion
-            creacionFuncion(4);
+            //Girar a la izquierda
+            estudiante.turnLeft();
+            estudiante.turnLeft();
+            estudiante.turnLeft();
+                       
+            //Mover una interseccion en el sentido al cual este apuntando el objeto.
+            estudiante.move ();
+            estudiante.move ();
             
-            //Toman un Thing
-            estudiante.pickThing();
+             //Girar a la izquierda
+            estudiante.turnLeft();
+            estudiante.turnLeft();            
             
-            
+           
 	}
         
         public static void creacionFuncion(int parametroEntrada){
